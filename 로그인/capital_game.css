@@ -1,0 +1,103 @@
+header{
+  border-bottom : 1px solid #eee;
+  height : 50px;
+}
+
+.navbar{
+  max-width : 1200px;
+  margin : auto;
+  width : 100%;
+}
+
+.navbar .brand{
+  font-size : 18px;
+  display : inline-block;
+  margin-top : 8px;
+  color: #656565;
+}
+
+ul.nav {
+  display : inline-block;
+  color : #656565;
+  list-style-type: none;
+  float : right;
+  font-size : 14px;
+}
+
+ul.nav li{
+  display : inline-block;
+  margin-left : 50px;
+}
+
+.login-main{
+  width : 100%;
+  max-width : 400px;
+  margin : auto;
+  margin-top : 100px;
+  clear : both;
+  border-style : solid;
+  border-color : #4596d5;
+}
+
+.login-main .title{
+  margin-top : 50px;
+  padding : 60px;
+  text-align: center;
+  color : #4596d5;
+}
+
+.login-method{
+  margin-top : 0px;
+  display : inline-block;
+  width : 100%;
+  max-width : 400px;
+  text-align : center;
+}
+.login-method .email-login{
+  padding : 5px;
+  width : 400px;
+  text-align : center;
+}
+.email-login-buttons{
+  margin-top : 15px;
+  padding : 5px;
+  display : inline-block;
+  max-width : 300px;
+  margin-bottom : 250px;
+}
+.signin{
+  border-style : solid;
+  border-color : #d4d4d4;
+  background-color : white;
+  color : black;
+}
+.login{
+  border-style : solid;
+  border-color : #d4d4d4;
+  background-color : white;
+  color : black;
+}
+
+.link {
+  display : inline-block;
+  float: right;
+  width: 260px;
+}
+
+.team-main{
+  width : 100%;
+  max-width : 400px;
+  height: 200px;
+  margin : auto;
+  margin-top : 100px;
+  clear : both;
+  border-style : solid;
+  border-color : #4596d5;
+}
+.team-main .title{
+  margin-top : 10px;
+  padding : 10px;
+  padding-left: 40px;
+  text-align: left;
+  color : #4596d5;
+}
