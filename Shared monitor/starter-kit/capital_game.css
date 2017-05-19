@@ -1,0 +1,37 @@
+header{
+  border-bottom : 2px solid blue;
+  height : 60px;
+}
+
+.navbar{
+  font-size : 16px;
+  max-width : 800px;
+  margin : auto;
+  width : 100%;
+}
+
+.navbar .brand{
+  display : inline-block;
+  margin-top : 22px;
+  color: #656565;
+}
+ul.nav {
+  display : inline-block;
+  color : #656565;
+  list-style-type: none;
+  float : right;
+}
+ul.nav li{
+  display : inline-block;
+  margin-left : 20px;
+}
+.controls {
+	width:100px; 
+	height:30px; 
+	margin-top:5px; 
+	border: 1px dashed blue;
+}
+ .colors {
+	 width:20px; 
+	 height:20px
+}
