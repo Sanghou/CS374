@@ -48,7 +48,7 @@ window.onload = function() {
  	var ctx = document.getElementById("canvas").getContext("2d");
  	ctx.drawImage(img,0,0,700,500);
  }
- 	img.src = "https://s3.amazonaws.com/codecademy-blog/assets/ninja_zpsa5dbe37a.jpg"
+ 	img.src = "./bg_bird.jpg"
 }
  
 // 현재 클릭중인지 아닌지 구분?하기위한 변수 세팅
