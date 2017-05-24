@@ -86,14 +86,9 @@ window.onload = function(){
  </canvas>
  <div class = "task">
  <input type="file" id="loadImg" name = "loadImg"><br/>
- mode : <span id="mode"></span><br/>
- x좌표 : <span id="x"></span><br/>
- y좌표 : <span id="y"></span><br/>
  <input type="button" id = "pen" value="pen" onclick="changeMode(0)">
  <input type="button" id = "line" value="line" onclick="changeMode(1)">
  <br>
- <textarea rows="" cols="" id="data"></textarea>
- <input type="button" id = "send" value="Send Important alarm"><br>
  </div>
 
  </div>
@@ -117,6 +112,8 @@ window.onload = function(){
         </td>
         <td style = "border-bottom : 1px solid black;">
           <button id = "pr2__submit">Send Task</button>
+
+            <input type="button" id = "send" value="Alarm it again">
         </td>
       </tr>
 </div>
