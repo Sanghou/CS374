@@ -183,7 +183,7 @@ $("input:file[name=loadImg]").change(function(e){
 send.onclick = function(){
 var isDel = confirm("정말로 보내시겠습니까?");
   if(isDel){
-   alert("디자이너에게 알람이 전달되었습니다.")
+   //alert("디자이너에게 알람이 전달되었습니다.")
    data.value = ("");
   }
   else{
@@ -221,7 +221,7 @@ var isDel = confirm("정말로 보내시겠습니까?");
 	pr2_sub.onclick = function(){
 		var isDel = confirm("정말로 추가하시겠습니까??");
 		if(isDel){
-			alert("디자이너에게 Task가 전달되었습니다.")
+			//alert("디자이너에게 Task가 전달되었습니다.")
 			stack_table();
 		pr2_an.focus();
 		pr2_an.value = "";
