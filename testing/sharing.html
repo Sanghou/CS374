@@ -82,21 +82,19 @@ window.onload = function(){
   
  <div class = 'wrapper'>
   <div class = "canvas">
- <canvas id="canvas" class ="canvas" width="700" height="500" style='border:1px solid;'>
+ <canvas id="canvas" class ="canvas" width="800" height="450" style='border:1px solid;'>
  </canvas>
  <div class = "task">
- <input type="file" id="loadImg" name = "loadImg"><br/>
-
- <input type="button" id = "pen" class ="pen" value="pen" onclick="changeMode(0)">
- <input type="button" id = "line" class="line" value="line" onclick="changeMode(1)">
-
-
+ <input type="file" class = "hidden" id="loadImg" name = "loadImg"><br/>
+ <input type="button" id = "pen" value="pen" onclick="changeMode(0)">
+ <input type="button" id = "line" value="line" onclick="changeMode(1)">
  <br>
  </div>
 
  </div>
  
- <div>
+ <div class = "wrapper2">
+ 
 <table class = "collapse" id = "resultTable">
 	  <tr style = ' font-weight : bold' >
         <td style = "border-bottom : 6px solid black;">
@@ -116,12 +114,10 @@ window.onload = function(){
         <td style = "border-bottom : 1px solid black;">
           <button id = "pr2__submit">Send Task</button>
 
-            <input type="button" id = "send" value="Alarm it again">
-        </td>
+         </td>
       </tr>
-</div>
-
-<div class="jstalktheme" id="jstalktheme_test" style="width: 320px; height: 498px;">
+	  </table>
+<div class="jstalktheme" id="jstalktheme_test" style="width: 320px; height: 448px;">
 
 		<div class="msg">
 			</div>
@@ -133,6 +129,7 @@ window.onload = function(){
     </div>
     <div class="clear">
     </div>
+</div>
 </div>
 </div>
 

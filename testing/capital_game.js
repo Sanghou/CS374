@@ -46,7 +46,7 @@ window.onload = function() {
  var img = new Image();
  img.onload = function(){
  	var ctx = document.getElementById("canvas").getContext("2d");
- 	ctx.drawImage(img,0,0,700,500);
+ 	ctx.drawImage(img,0,0,800,450);
  }
  	img.src = "./bg_bird.jpg"
 }
@@ -77,11 +77,6 @@ function dragEvent(event) {
 }
  
 // 좌표 출력
-function printXY(e){
- var g = picture.context;
- document.getElementById("x").innerHTML = e.x -8;
- document.getElementById("y").innerHTML = e.y -70;
-}
  
 // 라인, 사각형 등 이전 좌표가 필요할 경우 이전좌표 세팅
 function setBeforeXY(e){
@@ -113,25 +108,21 @@ function drawRect(e){
 // 각 경우에 따라서 이벤트리스너를 달아준다.
 function mouseListener(){
  var mode = Number(eventObject.mode);
- picture.canvas.addEventListener("mousemove", printXY, false);
  
  switch(mode){
  
  case 0:
-  document.getElementById("mode").innerHTML = "pen";
   picture.canvas.addEventListener("mousedown",setClickTrue, false);
   picture.canvas.addEventListener("mouseup", setClickFalse, false);
   picture.canvas.addEventListener("mousemove", dragEvent, false);
   break;
   
  case 1:
-  document.getElementById("mode").innerHTML = "line";
   picture.canvas.addEventListener("mousedown",setBeforeXY, false);
   picture.canvas.addEventListener("mouseup", drawLine, false);
   break;
   
  case 2:
-  document.getElementById("mode").innerHTML = "rect";
   picture.canvas.addEventListener("mousedown",setBeforeXY, false);
   picture.canvas.addEventListener("mouseup", drawRect, false);
   break;
@@ -165,7 +156,7 @@ line.onclick = function(){
  
 //////////////////////////////////////////////////////////////////////////////
 // input file 로 읽어온 이미지를 canvas 에 배경으로 출력
-
+/*
 $("input:file[name=loadImg]").change(function(e){
 	var file = e.target.files[0];
 	var reader = new FileReader();
@@ -178,18 +169,19 @@ $("input:file[name=loadImg]").change(function(e){
  			img.src = e.target.result; 		}
  		reader.readAsDataURL(file);
 })
- 
-// canvas에 그려진 그림을 파일로 저장
-send.onclick = function(){
-var isDel = confirm("정말로 보내시겠습니까?");
+ */
+
+
+$(document).on('click', ".send", function(e){
+		var isDel = confirm("알람을 보내시겠습니까?");
   if(isDel){
-   //alert("디자이너에게 알람이 전달되었습니다.")
+   alert("디자이너에게 알람이 전달되었습니다.")
    data.value = ("");
   }
   else{
    return;
   }
-}
+});
 
 	var pr2_qu = document.getElementById("pr2__question");
 	var pr2_an = document.getElementById("pr2__answer");
@@ -208,7 +200,7 @@ var isDel = confirm("정말로 보내시겠습니까?");
 		var t = document.createTextNode("delete");
 		deletebtn.appendChild(t);
 		newCell2.innerHTML = newInput;
-		newCell3.innerHTML = newCell3.innerHTML + '<button style="float: right;" id="delete_btn" class = "remove-me"name="btn" >Delete</button>'
+		newCell3.innerHTML = newCell3.innerHTML + '<input type="button" class = "send" id = "send" value="Alarm it again">'+ '<button style="float: right;" id="delete_btn" class = "remove-me"name="btn" >Delete</button>'
 		
 	}
 	
@@ -221,7 +213,7 @@ var isDel = confirm("정말로 보내시겠습니까?");
 	pr2_sub.onclick = function(){
 		var isDel = confirm("정말로 추가하시겠습니까??");
 		if(isDel){
-			//alert("디자이너에게 Task가 전달되었습니다.")
+			alert("디자이너에게 Task가 전달되었습니다.")
 			stack_table();
 		pr2_an.focus();
 		pr2_an.value = "";

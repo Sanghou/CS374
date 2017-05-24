@@ -259,7 +259,7 @@ ul.nav li{
 }
 
 .my-box { 
-  border:1px solid; 
+  border:1px solid;
   padding:10px; 
   margin-left:20px;
   vertical-align: middle;
@@ -329,30 +329,17 @@ ul.nav li{
 }
 
 .wrapper{
-	width : 1404px;
-	height : 500px;
+	width : 1400px;
+	height : 700px;
 	padding-right : 5 px;
 	padding-bottom : 5px;
 }
+.wrapper2{
+	float:top;
+}
 
 .canvas{
-  float : left;
-}
-input.pen{
-  background-color : none;
-  background: url(earser.png) auto center;
-  border: none;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-
-input.line{
-  background: url(set-square.png) auto;
-  border: none;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
+	float : left;
 }
 
 tr {
@@ -364,23 +351,16 @@ h1{
   font-family: 'Tangerine', serif ; 
 }
 
-h3{
-  text-align: right;
-  font-family: 'Tangerine', serif;
-  color : green;
-  font-size : 10px;
-}
-h4{
-  text-align: right;
-  font-family: 'Tangerine', serif;
-  color : grey;
-  font-size : 10px;
-}
+
 
 .collapse{
 	border-collapse : collapse;
-	position : center;
+	float : top;
 }
 td {
   padding : 5px;
+}
+
+.hidden{
+	display : none;
 }
