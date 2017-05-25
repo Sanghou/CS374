@@ -347,10 +347,25 @@ tr {
 }
 
 h1{
+  text-align : center;
+  font-family: 'Tangerine', serif ; 
+}
+h2{
   text-align : left;
   font-family: 'Tangerine', serif ; 
 }
-
+h3{
+  text-align : right;
+  font-family: 'Tangerine', serif ; 
+  color : green;
+  font-size : 10px;
+}
+h4{
+  text-align : right;
+  font-family: 'Tangerine', serif ; 
+  color : grey;
+  font-size : 10px;
+}
 
 
 .collapse{
