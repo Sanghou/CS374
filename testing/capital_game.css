@@ -260,12 +260,10 @@ ul.nav li{
 
 .my-box { 
   border:1px solid;
-  padding:10px; 
-  margin-left:20px;
   vertical-align: middle;
   text-align: center;  
-  width:700px; 
-  height:500px;
+  width:800px; 
+  height:450px;
 }
 
 .button-sharing {

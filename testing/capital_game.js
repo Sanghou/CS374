@@ -50,6 +50,20 @@ window.onload = function() {
  }
  	img.src = "./bg_bird.jpg"
 }
+
+window.onload = function() {
+ document.getElementById("loadImg").addEventListener("change", loadImg, false);
+ picture.canvas = document.getElementById("emptycanvas");
+ picture.context = picture.canvas.getContext("2d");
+ mouseListener();
+ 
+ var img = new Image();
+ img.onload = function(){
+ 	var ctx = document.getElementById("canvas").getContext("2d");
+ 	ctx.drawImage(img,0,0,800,450);
+ }
+
+}
  
 // 현재 클릭중인지 아닌지 구분?하기위한 변수 세팅
 function setClickTrue(){
