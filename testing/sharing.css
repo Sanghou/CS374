@@ -147,7 +147,7 @@ ul.nav li{
 .jstalktheme .msg .mytalk .a
 {
   float: right;
-  position: relative;
+  position: reㅌlative;
   min-height: 24px;
   max-width: calc(100% - 64px);
   left: 2px;
@@ -358,6 +358,11 @@ h1{
 	float : top;
 }
 
+tbody{
+	height : 100px;
+	display : block;
+	overflow : auto;
+}
 td {
   padding : 5px;
 }
