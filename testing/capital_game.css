@@ -101,18 +101,6 @@ ul.nav li{
   text-align: left;
   color : #4596d5;
 }
-
-input.pen{
-  margin:0px; 
-  height:50px;
-  width: 50px; 
-  padding:3px 8px 1px 8px; 
-  border:1px 
-  solid #B6B6B6; 
-  background-image:url( "/pencil.png" );
-
-}
-
 .jstalktheme
 {
 	float : left;
@@ -341,7 +329,7 @@ input.pen{
 }
 
 .wrapper{
-	width : 1400px;
+	width : 1200px;
 	height : 700px;
 	padding-right : 5 px;
 	padding-bottom : 5px;
@@ -359,30 +347,21 @@ tr {
 }
 
 h1{
-  text-align : center;
-  font-family: 'Tangerine', serif ; 
-}
-h2{
   text-align : left;
   font-family: 'Tangerine', serif ; 
 }
 
-h3{
-  text-align: right;
-  font-family: 'Tangerine', serif;
-  color : green;
-  font-size : 10px;
-}
-h4{
-  text-align: right;
-  font-family: 'Tangerine', serif;
-  color : grey;
-  font-size : 10px;
-}
+
 
 .collapse{
 	border-collapse : collapse;
 	float : top;
+}
+
+tbody{
+	height : 100px;
+	display : block;
+	overflow : auto;
 }
 td {
   padding : 5px;
@@ -390,4 +369,6 @@ td {
 
 .hidden{
 	display : none;
+}
+.new{
 }

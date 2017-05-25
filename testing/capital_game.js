@@ -210,6 +210,7 @@ $(document).on('click', ".send", function(e){
 		var printTable = document.getElementById('resultTable');
 		var newRow = printTable.insertRow(2);
 		newRow.style.borderBottom = "1px solid";
+		newRow.className = 'new';
 		var newCell1 = newRow.insertCell(0);
 		var newCell2 = newRow.insertCell(1);
 		var newCell3 = newRow.insertCell(2);
