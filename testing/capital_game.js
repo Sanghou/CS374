@@ -104,6 +104,24 @@ function drawRect(e){
  g.stroke();
  // g.fill(); 을 g.stroke() 대신 사용하면 속이 꽉찬 사각형을 그린다.
 }
+
+earser.onclick = function clearCanvas()
+{
+	alert("This will earse all your comment on the window. Is it okay?");
+    // canvas
+    var cnvs = document.getElementById('canvas');
+    // context
+    var ctx = canvas.getContext('2d');
+
+    canvas.width = canvas.width;
+   	var img = new Image();
+ 	img.onload = function(){
+ 		var ctx = document.getElementById("canvas").getContext("2d");
+ 		ctx.drawImage(img,0,0,800,450);
+ 	}
+ 	img.src = "./bg_bird.jpg"
+}
+
  
 // 각 경우에 따라서 이벤트리스너를 달아준다.
 function mouseListener(){
@@ -175,7 +193,7 @@ $("input:file[name=loadImg]").change(function(e){
 $(document).on('click', ".send", function(e){
 		var isDel = confirm("알람을 보내시겠습니까?");
   if(isDel){
-   alert("디자이너에게 알람이 전달되었습니다.")
+   //alert("디자이너에게 알람이 전달되었습니다.")
    data.value = ("");
   }
   else{
@@ -213,7 +231,7 @@ $(document).on('click', ".send", function(e){
 	pr2_sub.onclick = function(){
 		var isDel = confirm("정말로 추가하시겠습니까??");
 		if(isDel){
-			alert("디자이너에게 Task가 전달되었습니다.")
+			//alert("디자이너에게 Task가 전달되었습니다.");
 			stack_table();
 		pr2_an.focus();
 		pr2_an.value = "";
