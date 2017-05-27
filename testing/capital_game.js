@@ -46,7 +46,7 @@ window.onload = function() {
  var img = new Image();
  img.onload = function(){
  	var ctx = document.getElementById("canvas").getContext("2d");
- 	ctx.drawImage(img,0,0,1200,675);
+ 	ctx.drawImage(img,0,0,800,450);
  }
  	img.src = "./bg_bird.jpg"
 }
