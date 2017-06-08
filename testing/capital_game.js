@@ -15,7 +15,7 @@ var eventObject = {
  mode: 0,
  click : false,
  x: -8,
- y: -70,
+ y: -60,
 };
  
  (function() {
@@ -50,7 +50,7 @@ window.onload = function() {
  }
  	img.src = "./bg_bird.jpg"
 }
-
+ 
 // 현재 클릭중인지 아닌지 구분?하기위한 변수 세팅
 function setClickTrue(){
  eventObject.click = true;
@@ -67,10 +67,10 @@ function dragEvent(event) {
  g.moveTo(eventObject.x, eventObject.y);
  
  eventObject.x = event.x -8;
- eventObject.y = event.y -70;
+ eventObject.y = event.y -60;
  
  if (eventObject.click) {
-  g.lineTo(event.x -8, event.y -70);
+  g.lineTo(event.x -8, event.y -60);
   g.stroke();
  }
  
@@ -83,8 +83,8 @@ function setBeforeXY(e){
  
  var g = picture.context;
  eventObject.x = e.x -8;
- eventObject.y = e.y -70;
- g.moveTo(e.x -8, e.y -70);
+ eventObject.y = e.y -60;
+ g.moveTo(e.x -8, e.y -60);
 }
  
 // setBeforeXY 에서 세팅한 좌표부터 현재 좌표까지 직선을 그림
@@ -92,7 +92,7 @@ function drawLine(e){
  
  var g = picture.context;
  
- g.lineTo(e.x-8, e.y-70);
+ g.lineTo(e.x-8, e.y-60);
  g.stroke();
 }
  
@@ -122,20 +122,27 @@ earser.onclick = function clearCanvas()
  	img.src = "./bg_bird.jpg"
 }
 
+function printXY(e){
+ var g = picture.context;
+ document.getElementById("x").innerHTML = e.x;
+ document.getElementById("y").innerHTML = e.y;
+}
+
  
 // 각 경우에 따라서 이벤트리스너를 달아준다.
 function mouseListener(){
  var mode = Number(eventObject.mode);
- 
  switch(mode){
  
  case 0:
+document.getElementById("mode").innerHTML = '<img src = "./edit.png" width=20 height = 20>';
   picture.canvas.addEventListener("mousedown",setClickTrue, false);
   picture.canvas.addEventListener("mouseup", setClickFalse, false);
   picture.canvas.addEventListener("mousemove", dragEvent, false);
   break;
   
  case 1:
+ document.getElementById("mode").innerHTML = '<img src = "./diagonal-line.png" width=20 height = 20>';
   picture.canvas.addEventListener("mousedown",setBeforeXY, false);
   picture.canvas.addEventListener("mouseup", drawLine, false);
   break;

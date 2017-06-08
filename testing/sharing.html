@@ -84,33 +84,34 @@ window.onload = function(){
   <div class = "canvas">
  <canvas id="canvas" class ="canvas" width="800" height="450" style='border:1px solid;'>
  </canvas>
- <div class = "task">
- <input type="file" class = "hidden" id="loadImg" name = "loadImg"><br/>
- <hr>
- <input type="button" id = "pen" value="pen" onclick="changeMode(0)">
- <input type="button" id = "line" value="line" onclick="changeMode(1)">
- <input type = "button" id = "earser" value = "earser" onclick="clearCanvas()">
- <br>
- </div>
+
 
  </div>
  
  <div class = "wrapper2">
-  
-<div class="jstalktheme" id="jstalktheme_test" style="width: 390px; height: 315px;">
-
-		<div class="msg">
-			</div>
-
-<div class="sendmsg">
-    <textarea class="textarea" id="jstalktheme_testmsg" onkeypress="if(event.keyCode==13){ jstalktheme_testfunc(); this.value=''; return false; }else if(event.keyCode==10){ this.value+='\n'; }"></textarea>
-    <div class="button" onclick="jstalktheme_testfunc()">
-     <p>전송</p>
-    </div>
-    <div class="clear">
-    </div>
-</div>
-</div>
+ <table class = "collapse" id = "resultTable">
+<thead>
+	  <tr style = ' font-weight : bold' >
+        <td style = "border-bottom : 6px solid black;">
+        Drawing Tool
+		</td>
+		</tr>
+		</thead>
+		<tr>
+		<td>
+  <div class = "task">
+ <input type="file" class = "hidden" id="loadImg" name = "loadImg"><br/>
+ <input type="button" id = "pen" value="pen" onclick="changeMode(0)">
+ <input type="button" id = "line" value="line" onclick="changeMode(1)">
+ <input type = "button" id = "earser" value = "earser" onclick="clearCanvas()">
+ mode : <span id="mode"></span><br/>
+ <br>
+	
+ </div>
+ </td>
+ </tr>
+ </table>
+ <hr></hr>
  <table class = "collapse" id = "resultTable">
 <thead>
 	  <tr style = ' font-weight : bold' >
