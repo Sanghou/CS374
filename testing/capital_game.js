@@ -15,7 +15,7 @@ var eventObject = {
  mode: 0,
  click : false,
  x: -8,
- y: -60,
+ y: -145,
 };
  
  (function() {
@@ -67,10 +67,10 @@ function dragEvent(event) {
  g.moveTo(eventObject.x, eventObject.y);
  
  eventObject.x = event.x -8;
- eventObject.y = event.y -60;
+ eventObject.y = event.y -145;
  
  if (eventObject.click) {
-  g.lineTo(event.x -8, event.y -60);
+  g.lineTo(event.x -8, event.y -145);
   g.stroke();
  }
  
@@ -83,8 +83,8 @@ function setBeforeXY(e){
  
  var g = picture.context;
  eventObject.x = e.x -8;
- eventObject.y = e.y -60;
- g.moveTo(e.x -8, e.y -60);
+ eventObject.y = e.y -145;
+ g.moveTo(e.x -8, e.y -145);
 }
  
 // setBeforeXY 에서 세팅한 좌표부터 현재 좌표까지 직선을 그림
@@ -92,7 +92,7 @@ function drawLine(e){
  
  var g = picture.context;
  
- g.lineTo(e.x-8, e.y-60);
+ g.lineTo(e.x-8, e.y-145);
  g.stroke();
 }
  
