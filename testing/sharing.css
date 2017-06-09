@@ -329,7 +329,7 @@ ul.nav li{
 }
 
 .wrapper{
-	width : 1200px;
+	width : 1600px;
 	height : 700px;
 	padding-right : 5 px;
 	padding-bottom : 5px;
@@ -358,8 +358,9 @@ h1{
 	float : top;
 }
 
+
 tbody{
-	height : 100px;
+	height : 150px;
 	display : block;
 	overflow : auto;
 }
