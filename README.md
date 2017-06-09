@@ -5,6 +5,7 @@ For CS374 DesignProject
 해당 서비스 실험은 target이 변경되어 designer의 work를 comment하는 사람들로 맞추어져 있다.
 
 따라서 서비스에 접속하여 online된 팀에 들어가 이미 공유된 사진에 comment를 남기는 것이 주된 task이다.
+https://sanghou.github.io/CS374/testing/  에서 test가 가능하다.
 
 testing 폴더로 최종 prototype을 merge하여 저장하였다.
 
