@@ -329,8 +329,8 @@ ul.nav li{
 }
 
 .wrapper{
-	width : 1600px;
-	height : 700px;
+	width : 1200px;
+	height : 800px;
 	padding-right : 5 px;
 	padding-bottom : 5px;
 }
@@ -372,4 +372,9 @@ td {
 	display : none;
 }
 .new{
+}
+
+.wrapper3{
+	float : top;
+	width : 700px;
 }
