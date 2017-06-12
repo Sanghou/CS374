@@ -49,21 +49,7 @@ function jstalktheme_addmsg( time, msg)
 }
 
 
-function jstalktheme_testfunc()
-{
-  var otxtmsg = document.getElementById("jstalktheme_testmsg");
-  var d = new Date();
-  var ampm = (d.getHours()>12 ?  "PM" : "AM");
-  var h = (d.getHours()>12 ? d.getHours()-12 : d.getHours());
-  var m = d.getMinutes();
 
-  //test_type ^= 0x01;
-  jstalktheme_addmsg( ampm+" "+h+":"+m, otxtmsg.value.replace("\n","<br />\n"));
-}
-
-window.onload = function(){
-	jstalktheme_testfunc();
-}
 </script>
   </head>
   <body>

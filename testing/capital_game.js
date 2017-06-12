@@ -209,17 +209,17 @@ $(document).on('click', ".send", function(e){
 });
 
 function myFunction() {
-    var person = prompt("Please enter your name", "Harry Potter");
-    if (person != null) {
-        return "Hello " + person + "! How are you today?";
-    }
+    var person = prompt("Please enter your name", "REPLY..");
+    if (person != null) 
+        document.getElementById("demo").innerHTML ="Hello " + person + "! How are you today?";
+    
 }
 
 $(document).on('click', ".reply", function(e){
 	$parentTR = $(this).closest('tr');
-	
-	var n = myFunction();
-	$parentTR.insertAfter();
+	var person = prompt("Please write comment about this task", "..");
+    if (person != null) 
+		$("<tr style = \"font-size:12px;\"><td style = \"border-bottom : 1px solid black;\"></td><td style = \"border-bottom : 1px solid black;\"> - RE : "+ person +"</td><td style = \"border-bottom : 1px solid black;\">by HCIdemo</td></tr>").insertAfter($parentTR);
 });
 
 
