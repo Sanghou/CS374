@@ -219,7 +219,7 @@ $(document).on('click', ".reply", function(e){
 	$parentTR = $(this).closest('tr');
 	var person = prompt("Please write comment about this task", "..");
     if (person != null) 
-		$("<tr style = \"font-size:12px;\"><td style = \"border-bottom : 1px solid black;\"></td><td style = \"border-bottom : 1px solid black;\"> - RE : "+ person +"</td><td style = \"border-bottom : 1px solid black;\">by HCIdemo</td></tr>").insertAfter($parentTR);
+		$("<tr style = \"font-size:12px;\"><td style = \"border-bottom : 1px solid black;\"></td><td style = \"border-bottom : 1px solid black;\"> - RE : "+ person +"</td><td style = \"border-bottom : 1px solid black;\">by HCIdemo'<button style=\"float: right;\" id=\"delete_btn\" class = \"remove-me\"name=\"btn\" >Delete</button>'</td></tr>").insertAfter($parentTR);
 });
 
 
