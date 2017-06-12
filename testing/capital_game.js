@@ -208,6 +208,21 @@ $(document).on('click', ".send", function(e){
   }
 });
 
+function myFunction() {
+    var person = prompt("Please enter your name", "Harry Potter");
+    if (person != null) {
+        return "Hello " + person + "! How are you today?";
+    }
+}
+
+$(document).on('click', ".reply", function(e){
+	$parentTR = $(this).closest('tr');
+	
+	var n = myFunction();
+	$parentTR.insertAfter();
+});
+
+
 	var pr2_qu = document.getElementById("pr2__question");
 	var pr2_an = document.getElementById("pr2__answer");
 	var pr2_sub = document.getElementById("pr2__submit");
@@ -226,7 +241,7 @@ $(document).on('click', ".send", function(e){
 		var t = document.createTextNode("delete");
 		deletebtn.appendChild(t);
 		newCell2.innerHTML = newInput;
-		newCell3.innerHTML = newCell3.innerHTML + '<input type="button" class = "send" id = "send" value="Alarm it again">'+ '<button style="float: right;" id="delete_btn" class = "remove-me"name="btn" >Delete</button>'
+		newCell3.innerHTML = newCell3.innerHTML + '<input type="button" class = "send" id = "send" value="Alarm">' + '<input type="button" class = "reply" id = "reply" value="reply">'+ '<button style="float: right;" id="delete_btn" class = "remove-me"name="btn" >Delete</button>'
 		
 	}
 	
@@ -237,12 +252,11 @@ $(document).on('click', ".send", function(e){
 	pr2_an.focus();
 	
 	pr2_sub.onclick = function(){
-		var isDel = confirm("정말로 추가하시겠습니까??");
-		if(isDel){
+		
 			//alert("디자이너에게 Task가 전달되었습니다.");
 			stack_table();
 		pr2_an.focus();
 		pr2_an.value = "";
-		}
+		
 	}
 });

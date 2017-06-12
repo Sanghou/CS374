@@ -83,49 +83,37 @@ window.onload = function(){
   <div class = "canvas">
    <div class = "wrapper3">
  <figure>
-	<img src = "./profile-icon-png-898.png" width= 55 height = 55 style="float:left">
+	<img src = "./male-user-shadow.png" width= 40 height = 40 style="float:left">
 	<figcaption style="float:left;">조형준</figcaption>
 </figure>
 <figure>
-	<img src = "./profile-icon-png-898.png" width=55 height = 55 style="float:left">
+	<img src = "./male-user-shadow.png" width=40 height = 40 style="float:left">
 	<figcaption style="float:left; float: top">김민선</figcaption>
 </figure>
 <figure>
-	<img src = "./profile-icon-png-898.png" width=55 height = 55 style="float:left;">
+	<img src = "./male-user-shadow_grey.png" width=40 height = 40 style="float:left;">
 	<figcaption style="float:left;">이선주</figcaption>
 </figure> 
 <figure>
-	<img src = "./profile-icon-png-898.png" width=55 height = 55 style="float:left;">
+	<img src = "./male-user-shadow_grey.png" width=40 height = 40 style="float:left;">
 	<figcaption style="float:left;">김상호</figcaption>
 </figure>
+  &nbsp; &nbsp;&nbsp;   <a2 style ="font-weight: bold;"> Drawing Tool</a2>  &nbsp; 
+  
+<input type="button" id = "pen" value="pen" onclick="changeMode(0)">
+ <input type="button" id = "line" value="line" onclick="changeMode(1)">
+ <input type = "button" id = "earser" value = "earser" onclick="clearCanvas()">
+ mode : <span id="mode"></span><br/>
+
 </div>
   
  <canvas id="canvas" class ="canvas" width="800" height="450" style='border:1px solid;'>
  </canvas>
  </div>
- 
- <div class = "wrapper2" style = "padding-top : 80px;">
- <table class = "collapse">
-<thead>
-	  <tr style = ' font-weight : bold' >
-        <td style = "border-bottom : 6px solid black;">
-        Drawing Tool
-		</td>
-		</tr>
-	</thead>
-		<tr style = "border-bottom : 6px solid black;">
-		<td>
-  <div class = "task">
  <input type="file" class = "hidden" id="loadImg" name = "loadImg"><br/>
- <input type="button" id = "pen" value="pen" onclick="changeMode(0)">
- <input type="button" id = "line" value="line" onclick="changeMode(1)">
- <input type = "button" id = "earser" value = "earser" onclick="clearCanvas()">
- mode : <span id="mode"></span><br/>
- <br>
- </div>
- </td>
- </tr>
- </table>
+ 
+ <div class = "wrapper2" style = "padding-top : 40px;">
+  
  
  <table class = "collapse" id = "resultTable">
 <thead>
